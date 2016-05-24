@@ -1,5 +1,5 @@
 def count_hits(position):
-	"""find maximum hits possible for the given direction"""
+	"""find maximum hits possible for the given position"""
 	hits = (len(hit_positions.intersection(get_all_hit_pos(position, direction))) 
 			for direction in DIRECTIONS)
 	return max(hits)
